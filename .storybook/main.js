@@ -14,5 +14,12 @@ module.exports = {
   },
   "features": {
     "storyStoreV7": true
+  },
+  viteFinale: (config, { configType }) => {
+    if (configType === 'PRODUCTION') {
+      config.base = '/nome_do_repositorio/'
+    }
+
+    return config
   }
 }
