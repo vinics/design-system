@@ -17,7 +17,7 @@ module.exports = {
   },
   viteFinale: (config, { configType }) => {
     if (configType === 'PRODUCTION') {
-      config.base = '/nome_do_repositorio/'
+      config.base = '/design-system/'
     }
 
     return config
